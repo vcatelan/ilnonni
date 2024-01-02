@@ -1,30 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta>
-        <title>Il Nonni - Produtos Artesanais</title>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/grid.css">
-		<link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="img/ilnonni.png">
-    </head>
-    <body>
-        <section class="capa">
-            <div class="nonnos-container">
-                <a href="./roque-sobre.html"><div class="nonnos-item">
-                    <img class="nonnos" src="img/roque.png">
-                    <h3>Nonno Roque</h3>
-                </div></a>
-                <a href="./celeste-sobre.html"><div class="nonnos-item">
-                    <img class="nonnos" src="img/celeste.png">
-                    <h3>Da Nonna</h3>
-                </div></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Biblioteca de ícones Font Awesome -->
+    <title>Il Nonni - Produtos Artesanais</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/ilnonni.png">
+</head>
+
+<style>
+
+/* GERAL-CSS-STYLE-START */
+    /* Mobile-First-Styles-Start */
+    @media (max-width: 768px) {
+        .section-content {
+            flex-direction: row; /* Volte à ordem original para dispositivos maiores */
+        }
+        .column-content {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+    }
+    /* Mobile-First-Styles-End */
+
+    /* Font-Style-Start */
+    h1, h2, h6 {
+        font-family:Arial, Helvetica, sans-serif;
+        color:#4b011c ;
+        font-size: 30px ;
+        font-weight: 700 ;
+        line-height: 1rem;
+        margin: 10px 0;
+    }
+    h3, h4, h5 {
+        font-family:Arial, Helvetica, sans-serif;
+        color:#4b011c ;
+        font-size: 25px ;
+        font-weight: 700 ;
+        line-height: 1rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    p{
+        font-family:Arial, Helvetica, sans-serif;
+        color:#4b011c;
+        font-size: 24px ;
+        line-height: 1.2rem ;
+    }
+    /* Font-Style-End */
+
+    /* General-Style-Start */
+    body {
+        background-color: #FFEBCE;
+    }
+    .two-column-section {
+        text-align: center;
+        padding: 50px 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    .column-content > a {
+        color:#FFEBCE ;
+        font-size: 24px; 
+        text-decoration:none; 
+    }
+    img {
+        margin: 0 auto;
+        transition: transform 0.3s ease; /* Adicione uma transição suave */
+        width: 350px;
+    }    
+    img:hover {
+        transform: scale(1.1); /* Aumenta o tamanho em 150% quando o mouse passa por cima */
+    }
+    /* General-Style-End */
+/* CSS-END */
+</style>
+<body>
+<!-- TWOCOLLUMNS-IMAGE-START -->
+<section class="two-column-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="column-content">
+                    <a href="./il-nono.html">
+                        <img src="./img/roque.png" alt="Image 1">
+                        <h1>NONNO ROQUE</h1>
+                    </a>
+                </div>
             </div>
-            <div class="nonnos-item">
-                <h1>I NONNI</h1>
-                <h2>Produtos Artesanais</h2>
+            <div class="col-md-6">
+                <div class="column-content">
+                    <a href="./da-nona.html">
+                        <img src="./img/celeste.png" alt="Image 2">
+                        <h1>DA NONNA</h1>
+                    </a>
+                </div>
             </div>
-        </section>
-    </body>
+            <div class="col-md-12">
+                <div class="column-content">
+                    <h3>IL NONNI</h3>
+                    <h4>PRODUTOS ARTESANAIS</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- TWOCOLLUMNS-IMAGE-START -->
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

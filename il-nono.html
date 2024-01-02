@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Biblioteca de ícones Font Awesome -->
+    <title>Nono Roque</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/css/bootstrap.min.css">
+    <link rel="icon" href="img/ilnonni.png">
+</head>
+
+<style>
+/* GERAL-CSS-STYLE-START */
+
+    /* Mobile-First Styles */
+    @media (min-width: 768px) {
+        /* Apenas estilos adicionais para dispositivos maiores aqui, se necessário */
+        .section-content {
+            flex-direction: row; /* Volte à ordem original para dispositivos maiores */
+        }
+        .navbar {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: justify;
+            justify-content: center;
+            padding: 0.5rem 1rem;
+            flex-direction: column-reverse;
+            align-content: center;
+        }
+    }
+    /* Font-Style-Start */
+    h1, h2, h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #4b011c;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 2rem;
+        margin: 10px 0;
+    }
+    h3, h4, h5 {
+        font-family:Arial, Helvetica, sans-serif;
+        color:#4b011c ;
+        font-size: 25px ;
+        font-weight: 700 ;
+        line-height: 1rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #4b011c;
+        font-size: 17px;
+        line-height: 2.2rem;
+    }
+    a{
+        color:#FFEBCE ;
+        font-size: ; 
+        text-decoration: ; 
+    }
+    a:hover{
+        color:;
+        font-size: ;
+        text-decoration: ;
+    }
+    /* Font-Style-End */
+
+    /* Geral-Style-Start */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .column-content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    body {
+        background-color: #FFEBCE!important;;
+    }
+    .standart-btn {
+        color: #FFEBCE;
+        background-color: #522424;
+        border-color: #522424;
+        border-radius: 0px;
+    }
+    .standart-btn :hover {
+        color: #FFEBCE;
+        background-color: #4b011c;
+        border-color: #4b011c
+    }
+    /* Geral-Style-End */
+
+    /* 1-LOGO-&-LINK-HEADER-START */
+    .header {
+        background-color: #3A2212;
+        text-align: center;
+    }
+    .navbar-toggler-icon {
+        background-color: #FFEBCE; /* Cor do ícone de hambúrguer */
+    }
+    .navbar-toggler {
+        border-color: #FFEBCE; /* Cor do botão de hambúrguer */
+    }
+    .nav-links {
+        list-style: none;
+        padding: 0;
+    }
+    .nav-links li {
+        display: inline;
+        margin: 0 20px;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }       
+    /* 1-LOGO-&-LINK-HEADER-END */
+
+    /* 2-IMAGE-TEXT-START */
+    .text-image {
+        padding: 100px 0;
+        text-align: center;
+    }
+    .text-image-content {
+        display: flex;
+        align-items: center;
+        text-align: left; /* Alinhar o texto à esquerda em dispositivos maiores */
+    }
+    .text-image-text {
+        flex: 1;
+        padding: 20px;
+    }
+    .text-image-text h2 {
+        margin-bottom: 20px;
+    }
+    .text-image-image {
+        flex: 1;
+        padding: 20px;
+    }
+    .g-img{
+        width: 350px;
+    }
+    /* 2-IMAGE-TEXT-END */
+
+    /* 3-COLLUMNS-START */
+    .threecollumns {
+        padding: 50px 0;
+        text-align: center;
+    }
+    .threecollumns-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .threecollumns-subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .cardcollumn {
+        padding: 20px;
+        text-align: center;
+        margin: 0 10px;
+        display: inline-block;
+        max-width: 100vw;
+        margin-bottom: 50px;
+    }
+    .cardcollumn img {
+        max-width: 100%;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .cardcollumn h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .cardcollumn p {
+        font-size: 16px;
+    }
+    /* 3-COLLUMNS-END */
+
+    /* 4-ABOUT-US-START */
+
+    /* 4-ABOUT-US-END  */
+    .text-block h2{
+        margin-bottom: 20px;
+    }
+    .quote {
+        padding: 50px;
+        display: flex;
+        color: #3A2212;
+    }
+    /* 5-FOOTER-START */
+    .footer {
+        background-color: #3A2212;
+        color: #FFEBCE;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .footer-links {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .social-icons {
+        display: inline-block;
+    }
+    .social-icons i {
+        font-size: 24px;
+        margin-right: 10px;
+        color: #FFEBCE;
+    }
+    /* 5-FOOTER-END */
+        
+/* CSS-END */
+
+</style>
+<body>
+<!-- 1-LOGO-&-LINK-HEADER-START -->
+<section>
+    <header class="header">
+        <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="nav-links navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</section>
+<!-- 1-LOGO-&-LINK-HEADER-END -->
+
+<!-- 2-IMAGE-TEXT-START -->
+    <section id="intro-section">
+        <div class="text-image">
+            <div class="container">
+                <div class="row text-image-content">
+                    <div class="col-md-6 text-image-image">
+                        <img src="./img/roque.png" class="g-img" alt="Imagem à Esquerda">
+                    </div>
+                    <div class="col-md-6 text-image-text">
+                        <h2>Bem-vindo à Nonno Roque: Tradição em Sabor e Qualidade</h2>
+                        <p>
+                            Na Nonno Roque, somos mais do que apenas uma empresa de vinhos e vinagres. Somos uma celebração de uma herança que começou com o amor e dedicação do nosso amado avô, Nonno Roque. Sua paixão pela produção de vinhos finos e vinagres de alta qualidade serviu como inspiração para o nosso negócio familiar.
+                            Nonno Roque, um imigrante apaixonado pelo sabor, trouxe consigo segredos antigos de produção de vinhos e vinagres quando chegou nesta terra. Hoje, esses segredos são passados de geração em geração, mantendo viva a nossa tradição familiar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 2-IMAGE-TEXT-END -->
+
+<!-- 3-PRODUCTS-START -->
+    <section id="products-section">
+        <div class="threecollumns">
+            <div class="container">
+                <h2 class="section-title">Explore a Variedade Nonno Roque</h2>
+                <p class="section-subtitle">
+                    Nossa linha de produtos inclui vinhos tintos e brancos elegantes, bem como vinagres envelhecidos que são ideais para realçar o sabor das suas refeições. Seja você um conhecedor de vinhos ou alguém que aprecia a culinária, temos algo para todos.
+                </p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="cardcollumn">
+                            <img src="https://placehold.co/200x200" alt="Serviço 1">
+                            <h3>Serviço 1</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <a href="#" class="btn standart-btn">Comprar Serviço 1</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cardcollumn">
+                            <img src="https://placehold.co/200x200" alt="Serviço 2">
+                            <h3>Serviço 2</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <a href="#" class="btn standart-btn">Comprar Serviço 2</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cardcollumn">
+                            <img src="https://placehold.co/200x200" alt="Serviço 3">
+                            <h3>Serviço 3</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <a href="#" class="btn standart-btn">Comprar Serviço 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 3-PRODUCTS-END -->
+
+<!-- 4-ABOUT-US-START -->
+    <section id="about-us-section">
+        <div class="text-and-quote-section">
+            <div class="container">
+                <div class="text-block">
+                    <h2>O Nosso Compromisso com a Qualidade</h2>
+                    <p>
+                        Na Nonno Roque, acreditamos que a qualidade é a essência do nosso negócio. Cada garrafa de vinho e frasco de vinagre que produzimos reflete a nossa busca incansável pela excelência. Usamos apenas as melhores uvas e ingredientes, combinados com métodos de produção artesanais, para criar produtos que encantam os paladares mais exigentes.
+                    </p>
+                </div>
+                <div class="quote">
+                    <span>"A vida é curta demais para não seguir sua paixão. Deixe o seu coração ser o guia do seu destino. O vinho é a poesia engarrafada da vida, e cada gole é uma estrofe de prazer."</span>
+                </div>
+                <div class="text-block">
+                    <h2>Experimente a Tradição Nonno Roque</h2>
+                    <p>
+                        Convidamos você a explorar o mundo dos sabores autênticos e da tradição enraizada que é a Nonno Roque. Quando você compra um de nossos produtos, está não apenas saboreando a excelência, mas também fazendo parte de nossa história.
+
+                        Junte-se a nós na jornada de sabores que atravessa gerações. Na Nonno Roque, a tradição nunca sai de moda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 4-ABOUT-US-END -->
+
+<!-- 5-FOOTER-START -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+<!-- 5-FOOTER-END -->
+
+
+<!-- JAVA-SCRIPT-START -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll(".scroll");
+    
+            links.forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+    
+                    const targetId = this.getAttribute("data-target");
+                    const targetElement = document.querySelector(targetId);
+    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth" // Rola suavemente
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+<!-- JAVA-SCRIPT-END -->
+</body>
+</html>
